@@ -1,0 +1,40 @@
+Recursion is a programming technique where a function calls itself repeatedly to solve a problem by breaking it down into smaller, more manageable subproblems. In other words, a function in a recursive approach solves a part of the problem and delegates the rest of the problem to itself.
+
+In the context of computer programming, recursion is used to solve problems that can be broken down into smaller instances of the same problem. Each recursive call works on a smaller subset of the original problem until it reaches a base case, which is the simplest form of the problem that can be solved directly without further recursion.
+
+A recursive function typically consists of two parts:
+
+1. Base Case: The base case is the condition that stops the recursion. It defines the simplest instance of the problem that doesn't require further recursion and returns a specific result. Without a base case, the recursive function would keep calling itself indefinitely, leading to a stack overflow.
+
+2. Recursive Call: Inside the function, there is a call to itself with modified arguments to handle a smaller version of the problem. The recursive call allows the function to break down the original problem into smaller subproblems, which are then solved through recursive calls.
+
+The syntax for a recursive function in Python is straightforward. Here's the general structure of a recursive function:
+
+```
+    def recursive_function(parameters):
+        # Base case: Check if the recursion should stop or exit for condition satisfied
+        if base_case_condition:
+            return base_case_result
+
+        # Recursive call: Call the function with modified arguments
+        result = recursive_function(modified_parameters)
+        # Further processing (optional)
+        return result
+
+```
+
+Here's a simple example of a recursive function to calculate the factorial of a non-negative integer:
+
+```
+def factorial(n):
+    # Base case: If n is 0 or 1, return 1 (factorial of 0 and 1 is 1)
+    if n == 0 or n == 1:
+        return 1
+
+    # Recursive call: Multiply n with factorial of (n-1)
+    return n * factorial(n - 1)
+```
+
+In this example, the `factorial` function calculates the factorial of a non-negative integer `n`. If `n` is 0 or 1, the function returns 1 (the base case). Otherwise, it calls itself with `n - 1` as an argument to calculate the factorial of the smaller subproblem. The recursion continues until the base case is reached, and the results are multiplied together to obtain the final factorial.
+
+Recursive solutions can be elegant and concise for certain problems, but they require careful design to avoid infinite recursion and inefficiencies. Additionally, iterative (non-recursive) approaches may be more suitable for some problems, depending on the specific requirements and constraints.
