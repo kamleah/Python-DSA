@@ -3,7 +3,7 @@ Time and Space Complexity in TTwo Dimensional Arrays
 
 Operations                                          Time Complexity                             Space Complexity
 
-Creating an emmpty array                                O(1)                                        O(mn)
+Creating an empty array                                 O(1)                                        O(mn)
 Inserting a column/row in an array                      O(mn)/O(1)                                  O(1)
 Traversing a given array                                O(mn)                                       O(1)
 Accessing a given cell                                  O(1)                                        O(1)

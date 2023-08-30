@@ -1,0 +1,10 @@
+Time and Space Complexity in Python List
+
+Operations                                          Time Complexity                             Space Complexity
+
+Creating list                                           O(1)                                        O(n)
+Inserting a value in a list                             O(1)/O(n)                                   O(1)
+Traversing a given List                                 O(n)                                        O(1)
+Accessing a given cell                                  O(1)                                        O(1)
+Searching a given value                                 O(n)                                        O(1)
+Deleting a given value                                 O(1)/O(n)                                    O(1)

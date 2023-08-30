@@ -1,0 +1,9 @@
+
+Time and Space Complexity in Python Tuple
+
+Operations                                          Time Complexity                             Space Complexity
+
+Creating a Tuple                                        O(1)                                        O(n)
+Traversing a given Tuple                                O(n)                                        O(1)
+Accessing a given cell                                  O(1)                                        O(1)
+Searching a given cell                                  O(n)                                        O(1)

@@ -1,0 +1,9 @@
+A Dictonary is a collecion, which is unordered, changeable and indexed
+
+eg:- kamlesh:a person who own's or working in software company
+
+mydict = {"kamlesh":"a person who own's or working in software company"}
+
+to access the value 
+
+mydict["kamlesh"]
